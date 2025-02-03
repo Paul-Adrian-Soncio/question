@@ -1,4 +1,5 @@
 'use client'; // Ensure it's a Client Component
+import Image from "next/image";
 
 export default function Home() {
   // Function to move the 'No' button away from the cursor
@@ -45,6 +46,13 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
+      <Image
+        src="/heart.gif"
+        alt="heart"
+        width={256} // Set a fixed width
+        height={256} // Set a fixed height
+        className="mb-6"
+      />
       <h1 className="text-3xl mb-6 font-bold text-black">Will you be my Valentines?</h1>
       <div className="flex gap-4">
         <button className="px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600">
