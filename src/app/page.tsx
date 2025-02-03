@@ -18,7 +18,7 @@ export default function Home() {
 
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      const moveDistance = Math.min(1500, distance * 3); 
+      const moveDistance = Math.min(1500, distance * 3);
 
       const moveX = (dx / distance) * moveDistance;
       const moveY = (dy / distance) * moveDistance;
@@ -35,18 +35,25 @@ export default function Home() {
     }
   };
 
+  const handleYesClick = () => {
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+  };
+
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
       <Image
         src="/heart.gif"
         alt="heart"
         width={256} 
-        height={256} 
+        height={256}
         className="mb-6"
       />
       <h1 className="text-3xl mb-6 font-bold text-black">Will you be my Valentines?</h1>
       <div className="flex gap-4">
-        <button className="px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600">
+        <button
+          className="px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600"
+          onClick={handleYesClick}
+        >
           Yes
         </button>
         <button
