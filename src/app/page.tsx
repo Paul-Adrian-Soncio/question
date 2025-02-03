@@ -48,7 +48,7 @@ export default function Home() {
         height={256}
         className="mb-6"
       />
-      <h1 className="text-3xl mb-6 font-bold text-black">Will you be my Valentines?</h1>
+      <h1 className="text-3xl mb-6 font-bold text-black">Will you be my Valentine?</h1>
       <div className="flex gap-4">
         <button
           className="px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600"
